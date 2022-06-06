@@ -7,7 +7,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - run: npm i
@@ -15,7 +15,7 @@ jobs:
 
   test:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - run: npm i
@@ -23,7 +23,7 @@ jobs:
 
   analyze:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:13.8.0
     steps:
       - checkout
       - run: npm i
